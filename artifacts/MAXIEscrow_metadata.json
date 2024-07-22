@@ -1,0 +1,105 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "team_address",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "maxi_address",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "rebateSchedule",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "releaseMAXI",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "scheduleRebates",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Dip Catcher @TantoNomini",
+			"kind": "dev",
+			"methods": {
+				"releaseMAXI()": {
+					"details": "Uses current period to determine if it is year 3, 6, or 9. Then Sends the MAXI to the TEAM contract address.*"
+				},
+				"scheduleRebates()": {
+					"details": "Schedules the 369 MAXI Rebate by calculating amount of MAXI to send to TEAM during years 3, 6, and 9. *"
+				}
+			},
+			"title": "369 MAXI Escrow Contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Contract for scheduling and releasing the MAXI rebates in years 3,6, and 9 to the TEAM Contract.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Team_flat.sol": "MAXIEscrow"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Team_flat.sol": {
+			"keccak256": "0x82a93859d777b472246c4bd6afb8d14869ac5d488ba431b556b6c1ebe688a4e8",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://9c1f580a5738a7b698a7f4d5e6371962477cdf9dfe007cf271136e9ea84e539b",
+				"dweb:/ipfs/QmVrAMxZJQ4zmpWLzzPErWba9d3cEV4jJMuJBazq8N98GB"
+			]
+		}
+	},
+	"version": 1
+}

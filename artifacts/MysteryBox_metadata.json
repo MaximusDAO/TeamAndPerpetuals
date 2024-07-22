@@ -1,0 +1,122 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "team_address",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "maxi_address",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "MYSTERY_BOX_HOT_ADDRESS",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "confirmation",
+						"type": "string"
+					}
+				],
+				"name": "flushMAXI",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "confirmation",
+						"type": "string"
+					}
+				],
+				"name": "flushTEAM",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Dip Catcher @TantoNomini",
+			"kind": "dev",
+			"methods": {
+				"flushTEAM(uint256,string)": {
+					"details": "Sends TEAM to the MYSTERY_BOX_HOT_ADDRESS ALTHOUGH ANYONE CAN RUN THSEE PUBLIC FUNCTIONS YOU ABSOLUTELY SHOULD NOT DO IT BECAUSE IT WILL COST YOU A NON-REFUNDABLE MAXI TRANSFER TO THE MYSTERY BOX HOT ADDRESS. THE CONTENTS OF THE MYSTERY BOX ARE NOT YOURS.  THERE IS OBVIOUSLY NO BENEFIT FOR ANYONE TO RUN THIS. SERIOUSLY DON'T RUN IT, THERE ARE NO REFUNDS SO DO NOT EVEN ASK IF YOU MESS THIS UP - THERE IS NO ONE TO EVEN ASK. IT IS DELIBERATELY DIFFICULT TO RUN TO PREVENT PEOPLE FROM ACCIDENTALLY RUNNING IT.",
+					"params": {
+						"amount": "of MAXI SEND TO THE MYSTERY_BOX_HOT_ADDRESS",
+						"confirmation": "the message you have to deliberately type and broadcast stating that you know this function costs a non refundable MAXI equal to the amount you are flushing to run."
+					}
+				}
+			},
+			"title": "Mystery Box",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "The Mystery Box is and always will be a mystery. You can't possibly have any expectations of profit resulting from the Mystery Box because it is a mystery. how could you expect anything of a mystery? you cant! Please do not run these functions because they are expensive to run and you do not benefit in any way from running them. ",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Team_flat.sol": "MysteryBox"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Team_flat.sol": {
+			"keccak256": "0x82a93859d777b472246c4bd6afb8d14869ac5d488ba431b556b6c1ebe688a4e8",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://9c1f580a5738a7b698a7f4d5e6371962477cdf9dfe007cf271136e9ea84e539b",
+				"dweb:/ipfs/QmVrAMxZJQ4zmpWLzzPErWba9d3cEV4jJMuJBazq8N98GB"
+			]
+		}
+	},
+	"version": 1
+}
